@@ -131,7 +131,67 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
+		var loadStartTime = Date.now();
+		var codeLoaderShown = false;
+		var loaderHidden = false;
+		
+		// Function to hide the loader
+		var hideLoader = function() {
+			if (!loaderHidden) {
+				loaderHidden = true;
+				$(".fh5co-loader").fadeOut("slow");
+			}
+		};
+		
+		// Check if page load takes more than 3 seconds
+		var checkLoadTime = function() {
+			var elapsedTime = Date.now() - loadStartTime;
+			
+			if (elapsedTime >= 3000 && !codeLoaderShown && !loaderHidden) {
+				// Show code typing animation after 3 seconds
+				$(".fh5co-loader .loader-code").addClass("show");
+				codeLoaderShown = true;
+			}
+			
+			// Continue checking until page is fully loaded or we've shown code animation
+			if (document.readyState !== 'complete' && !loaderHidden) {
+				setTimeout(checkLoadTime, 100);
+			}
+		};
+		
+		// Start checking load time
+		setTimeout(checkLoadTime, 100);
+		
+		// Hide loader when page is ready
+		var pageLoadHandler = function() {
+			var elapsedTime = Date.now() - loadStartTime;
+			
+			if (elapsedTime < 3000) {
+				// Page loaded in less than 3 seconds - hide immediately
+				hideLoader();
+			} else if (codeLoaderShown) {
+				// Code animation was shown - give it a moment to be visible
+				setTimeout(hideLoader, 800);
+			} else {
+				// Edge case - hide after a short delay
+				setTimeout(hideLoader, 300);
+			}
+		};
+		
+		// Listen for page load
+		if (document.readyState === 'complete') {
+			// Page already loaded
+			pageLoadHandler();
+		} else {
+			$(window).on('load', pageLoadHandler);
+		}
+		
+		// Fallback: if load event doesn't fire, hide after a reasonable time
+		setTimeout(function() {
+			if (!loaderHidden) {
+				hideLoader();
+			}
+		}, 10000);
 	};
 
 	

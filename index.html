@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Personal Portfolio Website" />
 	<meta name="keywords" content="portfolio, web developer, html5, css3, responsive, personal website" />
-	<meta name="author" content="" />
+	<meta name="author" content="Dev Sharma" />
+	<meta name="theme-color" content="#FF9000">
+	<meta name="robots" content="index, follow">
+	
+	<!-- Security Headers -->
+	<meta http-equiv="X-Content-Type-Options" content="nosniff">
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+	<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+	<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+	<!-- Content Security Policy -->
+	<!-- Note: 'unsafe-inline' is used for inline scripts/styles. For better security, consider moving to external files -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://platform.linkedin.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://maps.googleapis.com; object-src 'none'; base-uri 'self';">
 
 
 
@@ -22,8 +33,10 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<!-- Preconnect for performance -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Kaushan+Script&display=swap" rel="stylesheet">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -41,6 +54,10 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<!-- Preload critical resources -->
+	<link rel="preload" href="css/style.css" as="style">
+	<link rel="preload" href="js/main.js" as="script">
 
 	</head>
 	<body>
@@ -449,10 +466,10 @@
 						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
 						<div class="blog-text">
 							<span class="posted_on">2024</span>
-							<h3><a href="https://github.com/DevSharma324/Autoficate" target="_blank">Autoficate</a></h3>
+							<h3><a href="https://github.com/DevSharma324/Autoficate" target="_blank" rel="noopener noreferrer">Autoficate</a></h3>
 							<p>A powerful Python application that serves as a tool for generating bulk E-Certificates, ID Cards, and various other documents. Streamlines the process of document generation for organizations and events.</p>
 							<ul class="stuff">
-								<li><a href="https://github.com/DevSharma324/Autoficate" target="_blank">View Project<i class="icon-arrow-right22"></i></a></li>
+								<li><a href="https://github.com/DevSharma324/Autoficate" target="_blank" rel="noopener noreferrer">View Project<i class="icon-arrow-right22"></i></a></li>
 							</ul>
 						</div> 
 					</div>
@@ -465,7 +482,7 @@
 							<h3><a href="#">Excel Add-in for Student Evaluation</a></h3>
 							<p>Developed an Excel Add-in to analyze student result data, calculating metrics like total passed students, students with condolences, and toppers per semester. Creates various charts and graphs based on selected options.</p>
 							<ul class="stuff">
-								<li><a href="https://github.com/DevSharma324" target="_blank">View Project<i class="icon-arrow-right22"></i></a></li>
+								<li><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer">View Project<i class="icon-arrow-right22"></i></a></li>
 							</ul>
 						</div> 
 					</div>
@@ -478,7 +495,7 @@
 							<h3><a href="#">Vehicle Rental System</a></h3>
 							<p>Built a comprehensive vehicle rental system using Java Swing for the UI and MS Access database for local data storage. Features include vehicle management, rental tracking, and customer data handling.</p>
 							<ul class="stuff">
-								<li><a href="https://github.com/DevSharma324" target="_blank">View Project<i class="icon-arrow-right22"></i></a></li>
+								<li><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer">View Project<i class="icon-arrow-right22"></i></a></li>
 							</ul>
 						</div> 
 					</div>
@@ -573,13 +590,17 @@
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<!-- NOTE: Google Maps API key is exposed. For production, consider:
+		 1. Restrict API key to specific domains in Google Cloud Console
+		 2. Use environment variables or server-side configuration
+		 3. Consider removing if map functionality is not needed -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&loading=async"></script>
 	<script src="js/google_map.js"></script>
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	
-	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript" crossorigin="anonymous"></script>
 
 	</body>
 </html>

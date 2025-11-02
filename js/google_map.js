@@ -27,21 +27,30 @@ function init() {
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
+    // Check if map element exists before initializing
+    if (!mapElement) {
+        console.warn('Map element not found. Map initialization skipped.');
+        return;
+    }
+
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
     
     var addresses = ['Brooklyn'];
 
     for (var x = 0; x < addresses.length; x++) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-            var p = data.results[0].geometry.location
-            var latlng = new google.maps.LatLng(p.lat, p.lng);
-            new google.maps.Marker({
-                position: latlng,
-                map: map,
-                icon: 'images/loc.png'
-            });
-
+        $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address='+encodeURIComponent(addresses[x]), null, function (data) {
+            if (data && data.results && data.results.length > 0) {
+                var p = data.results[0].geometry.location;
+                var latlng = new google.maps.LatLng(p.lat, p.lng);
+                new google.maps.Marker({
+                    position: latlng,
+                    map: map,
+                    icon: 'images/loc.png'
+                });
+            }
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.error('Geocoding failed:', textStatus, errorThrown);
         });
     }
     

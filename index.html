@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +7,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Personal Portfolio Website" />
 	<meta name="keywords" content="portfolio, web developer, html5, css3, responsive, personal website" />
-	<meta name="author" content="" />
+	<meta name="author" content="Dev Sharma" />
+	<meta name="theme-color" content="#000000">
+	<meta name="robots" content="index, follow">
+	
+	<!-- Security Headers -->
+	<meta http-equiv="X-Content-Type-Options" content="nosniff">
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+	<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+	<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+	<!-- Content Security Policy -->
+	<!-- Note: For better security, inline scripts/styles are not allowed. All scripts and styles should be loaded from external files. -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; object-src 'none'; base-uri 'self';">
 
 
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Dev Sharma - Backend Developer Portfolio"/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
+	<meta property="og:site_name" content="Dev Sharma Portfolio"/>
+	<meta property="og:description" content="Personal Portfolio Website - Backend Developer"/>
+	<meta name="twitter:title" content="Dev Sharma - Backend Developer Portfolio" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<meta name="twitter:card" content="summary" />
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<!-- Preconnect for performance -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Kaushan+Script&display=swap" rel="stylesheet">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -41,29 +54,60 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<!-- Preload critical resources -->
+	<link rel="preload" href="css/style.css" as="style">
+	<link rel="preload" href="js/main.js" as="script">
 
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
+	<div class="fh5co-loader">
+		<div class="loader-container">
+			<div class="loader-code">
+				<div class="code-line">
+					<span class="code-char">c</span><span class="code-char">o</span><span class="code-char">n</span><span class="code-char">s</span><span class="code-char">t</span><span class="code-char"> </span><span class="code-char">d</span><span class="code-char">e</span><span class="code-char">v</span><span class="code-char">e</span><span class="code-char">l</span><span class="code-char">o</span><span class="code-char">p</span><span class="code-char">e</span><span class="code-char">r</span><span class="code-char"> </span><span class="code-char">=</span><span class="code-char"> </span><span class="code-char">{</span>
+				</div>
+				<div class="code-line">
+					<span class="code-char indent">.</span><span class="code-char">.</span><span class="code-char">.</span><span class="code-char">n</span><span class="code-char">a</span><span class="code-char">m</span><span class="code-char">e</span><span class="code-char">:</span><span class="code-char"> </span><span class="code-char">'</span><span class="code-char">D</span><span class="code-char">e</span><span class="code-char">v</span><span class="code-char">'</span><span class="code-char">,</span>
+				</div>
+				<div class="code-line">
+					<span class="code-char indent">.</span><span class="code-char">.</span><span class="code-char">.</span><span class="code-char">r</span><span class="code-char">o</span><span class="code-char">l</span><span class="code-char">e</span><span class="code-char">:</span><span class="code-char"> </span><span class="code-char">'</span><span class="code-char">B</span><span class="code-char">a</span><span class="code-char">c</span><span class="code-char">k</span><span class="code-char">e</span><span class="code-char">n</span><span class="code-char">d</span><span class="code-char"> </span><span class="code-char">D</span><span class="code-char">e</span><span class="code-char">v</span><span class="code-char">'</span>
+				</div>
+				<div class="code-line">
+					<span class="code-char">}</span><span class="code-char">;</span>
+				</div>
+			</div>
+			<div class="loader-rings">
+				<div class="ring ring-1"></div>
+				<div class="ring ring-2"></div>
+				<div class="ring ring-3"></div>
+			</div>
+			<div class="loader-text">
+				<span class="loader-letter">D</span>
+				<span class="loader-letter">S</span>
+			</div>
+		</div>
+	</div>
 	
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+	<a href="#main-content" class="skip-link">Skip to main content</a>
+	<div id="page">
+	<header id="fh5co-header" class="fh5co-cover js-fullheight cover-bg-3" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
+							<div class="profile-thumb profile-image" role="img" aria-label="Dev Sharma profile photo"></div>
 							<h1><span>Dev Sharma</span></h1>
 							<h3><span>Backend Developer</span></h3>
-							<p>
+							<nav aria-label="Social media links" class="header-social-nav">
 								<ul class="fh5co-social-icons">
-									<li><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer"><i class="icon-github"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/devsharma324/" target="_blank" rel="noopener noreferrer"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer" aria-label="Visit Dev Sharma's GitHub profile"><i class="icon-github" aria-hidden="true"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/devsharma324/" target="_blank" rel="noopener noreferrer" aria-label="Visit Dev Sharma's LinkedIn profile"><i class="icon-linkedin2" aria-hidden="true"></i></a></li>
 								</ul>
-							</p>
+							</nav>
 						</div>
 					</div>
 				</div>
@@ -71,7 +115,8 @@
 		</div>
 	</header>
 
-	<div id="fh5co-about" class="animate-box">
+	<main id="main-content">
+	<section id="fh5co-about" class="animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -82,32 +127,27 @@
 				<div class="col-md-4">
 					<ul class="info">
 						<li><span class="first-block">Full Name:</span><span class="second-block">Dev Manoj Sharma</span></li>
-						<li><span class="first-block">Phone:</span><span class="second-block">+91 95526 01550</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">sharma.dev.work@gmail.com</span></li>
+						<li><span class="first-block">Phone:</span><span class="second-block"><a href="tel:+919552601550">+91 95526 01550</a></span></li>
+						<li><span class="first-block">Email:</span><span class="second-block"><a href="mailto:sharma.dev.work@gmail.com">sharma.dev.work@gmail.com</a></span></li>
 						<li><span class="first-block">Website:</span><span class="second-block">Coming Soon</span></li>
-
 					</ul>
 				</div>
 				<div class="col-md-8">
-					<h2>Hello There!</h2>
-					<p>I'm Dev Sharma, a passionate Backend Developer dedicated to crafting technical and practical solutions for complex challenges. With expertise in multiple programming languages and frameworks, I help create robust, scalable backend systems that power modern applications.</p>
+					<h2>Hello There!</h2> <!--do not modify the about me section -->
+					<p>I'm Dev Sharma, a Passionate Backend Developer helping craft Technical and Practical solutions to Power Quality applications. With expertise in multiple programming languages and frameworks, I help create robust, scalable backend systems that power modern applications.</p>
 					<p>Currently working as a Desktop Support Administrator at Wipro, I bring a unique perspective combining technical problem-solving skills with hands-on experience in system administration. My journey in technology spans from web development to system support, giving me a comprehensive understanding of the full technology stack.</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer"><i class="icon-github"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/devsharma324/" target="_blank" rel="noopener noreferrer"><i class="icon-linkedin2"></i></a></li>
-						</ul>
-					</p>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="fh5co-resume" class="fh5co-bg-color">
+	<div class="container"><hr></div>
+	
+	<section id="fh5co-resume" class="fh5co-bg-color">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume</h2>
+					<h2>Professional Timeline</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -121,60 +161,23 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Desktop Support Administrator</h3>
-									<span class="company">Wipro - 2024 - Current</span>
+									<span class="company">Wipro Limited<span class="company-date"> - 2024 - Current</span></span>
 								</div>
 								<div class="timeline-body">
 									<p>Providing comprehensive technical support and system administration services. Managing desktop environments, troubleshooting hardware and software issues, and ensuring optimal system performance for end-users across the organization.</p>
 								</div>
 							</div>
 						</li>
-						<!-- <li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Junior Developer</h3>
-									<span class="company">Company Name - 2013 - 2015</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">UI/UX Designer</h3>
-									<span class="company">Company Name - 2010 - 2012</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li> -->
-
 						<br>
 						<li class="timeline-heading text-center animate-box">
 							<div><h3>Education</h3></div>
 						</li>
-						<!-- <li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Masters Degree</h3>
-									<span class="company">University Name - 2007 - 2009</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li> -->
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Bachelors Degree</h3>
-									<span class="company">Birla Institute of Technology And Science, Pilani (BITS Pilani) - 2024 - 2028</span>
+									<span class="company">Birla Institute of Technology And Science, Pilani<span class="company-date"> - 2024 - 2028</span></span>
 								</div>
 								<div class="timeline-body">
 									<p>Pursuing Bachelor's degree in Engineering with focus on technology and innovation. Building strong foundation in computer science, mathematics, and engineering principles while developing practical skills in software development and system design.</p>
@@ -186,7 +189,7 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Diploma Course</h3>
-									<span class="company">K. K. Wagh Polytechnic, Nashik - 2020 - 2023</span>
+									<span class="company">K. K. Wagh Polytechnic<span class="company-date"> - 2020 - 2023</span></span>
 								</div>
 								<div class="timeline-body">
 									<p>Completed comprehensive diploma program in engineering technology. Gained hands-on experience with technical concepts, practical problem-solving, and project-based learning that laid the foundation for my technical career.</p>
@@ -198,7 +201,7 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">School</h3>
-									<span class="company">Nashik Cambridge School - 2009 - 2020</span>
+									<span class="company">Nashik Cambridge School<span class="company-date"> - 2009 - 2020</span></span>
 								</div>
 								<div class="timeline-body">
 									<p>Completed secondary and higher secondary education with strong academic performance. Developed foundational knowledge in science, mathematics, and technology that sparked my interest in pursuing a career in engineering and software development.</p>
@@ -209,10 +212,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	
-
-	<div id="fh5co-features" class="animate-box">
+	<section id="fh5co-features" class="animate-box">
 		<div class="container">
 			<div class="services-padding">
 				<div class="row">
@@ -230,7 +232,7 @@
 							</span>
 							<div class="feature-copy">
 								<h3>Software Development</h3>
-								<p>Building robust backend applications using modern technologies like PHP, Python, and Java. Specializing in API development, database design, and server-side logic implementation.</p>
+								<p>Building robust backend applications using modern technologies like Python and Java. Specializing in API development, database design, and server-side logic implementation.</p>
 							</div>
 						</div>
 					</div>
@@ -250,9 +252,9 @@
 
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="fh5co-skills" class="animate-box">
+	<section id="fh5co-skills" class="animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -261,303 +263,183 @@
 			</div>
 			<div class="row row-pb-md">
 				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
+					<div class="chart" data-percent="85"><span><strong>Python</strong>85%</span></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+					<div class="chart" data-percent="80"><span><strong>J2EE</strong>80%</span></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
-				</div>
-				<!-- <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
+					<div class="chart" data-percent="70"><span><strong>Android Development</strong>70%</span></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
+					<div class="chart" data-percent="60"><span><strong>C++</strong>60%</span></div>
 				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>Ruby</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Java</strong>90%</span></div>
-				</div> -->
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<!-- <div class="progress-wrap">
-						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">WordPress</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div> -->
-					<div class="progress-wrap">
-						<h3><span class="name-left">PHP</span><span class="value-right">80%</span></h3>
+						<h3><span class="name-left">Web Development</span><span class="value-right">70%</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 						  </div>
 						</div>
 					</div>
-					<div class="progress-wrap">
+					<!-- <div class="progress-wrap">
 						<h3><span class="name-left">Java</span><span class="value-right">85%</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
 						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
 						  </div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="col-md-6">
-					<!-- <div class="progress-wrap">
-						<h3><span class="name-left">Design</span><span class="value-right">100%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-						  </div>
-						</div>
-					</div>
 					<div class="progress-wrap">
-						<h3><span class="name-left">Ruby</span><span class="value-right">70%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
-					</div> -->
-					<div class="progress-wrap">
-						<h3><span class="name-left">Python</span><span class="value-right">85%</span></h3>
+						<h3><span class="name-left">Git</span><span class="value-right">60%</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+						  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
 						  </div>
 						</div>
 					</div>
-					<div class="progress-wrap">
+					<!-- <div class="progress-wrap">
 						<h3><span class="name-left">jQuery</span><span class="value-right">75%</span></h3>
 						<div class="progress">
 						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
 						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
 						  </div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<!-- <div id="fh5co-work" class="fh5co-bg-dark">
+	<section id="fh5co-work" class="fh5co-bg-dark">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Work</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-1.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-2.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Brading</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-3.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-4.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Design</span>
-						</div>
-					</a>
-				</div>
-			    <div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-5.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Website</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-6.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-7.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Brading</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div> -->
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Work</h2>
-					<!-- <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p> -->
+					<h2>Projects</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
+					<article class="fh5co-blog animate-box">
+						<a href="https://github.com/DevSharma324/Autoficate" class="blog-bg portfolio-1" target="_blank" rel="noopener noreferrer" aria-label="View Autoficate project"></a>
 						<div class="blog-text">
 							<span class="posted_on">2024</span>
-							<h3><a href="https://github.com/DevSharma324/Autoficate" target="_blank">Autoficate</a></h3>
+							<h3><a href="https://github.com/DevSharma324/Autoficate" target="_blank" rel="noopener noreferrer">Autoficate</a></h3>
 							<p>A powerful Python application that serves as a tool for generating bulk E-Certificates, ID Cards, and various other documents. Streamlines the process of document generation for organizations and events.</p>
 							<ul class="stuff">
-								<li><a href="https://github.com/DevSharma324/Autoficate" target="_blank">View Project<i class="icon-arrow-right22"></i></a></li>
+								<li><a href="https://github.com/DevSharma324/Autoficate" target="_blank" rel="noopener noreferrer">View Project<i class="icon-arrow-right22" aria-hidden="true"></i></a></li>
 							</ul>
 						</div> 
-					</div>
+					</article>
 				</div>
 				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
+					<article class="fh5co-blog animate-box">
+						<a href="https://github.com/DevSharma324" class="blog-bg portfolio-2" target="_blank" rel="noopener noreferrer" aria-label="View Excel Add-in project"></a>
 						<div class="blog-text">
 							<span class="posted_on">2024</span>
-							<h3><a href="#">Excel Add-in for Student Evaluation</a></h3>
+							<h3><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer">Excel Add-in for Student Evaluation</a></h3>
 							<p>Developed an Excel Add-in to analyze student result data, calculating metrics like total passed students, students with condolences, and toppers per semester. Creates various charts and graphs based on selected options.</p>
 							<ul class="stuff">
-								<li><a href="https://github.com/DevSharma324" target="_blank">View Project<i class="icon-arrow-right22"></i></a></li>
+								<li><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer">View Project<i class="icon-arrow-right22" aria-hidden="true"></i></a></li>
 							</ul>
 						</div> 
-					</div>
+					</article>
 				</div>
 				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
+					<article class="fh5co-blog animate-box">
+						<a href="https://github.com/DevSharma324" class="blog-bg portfolio-3" target="_blank" rel="noopener noreferrer" aria-label="View Vehicle Rental System project"></a>
 						<div class="blog-text">
 							<span class="posted_on">2023</span>
-							<h3><a href="#">Vehicle Rental System</a></h3>
+							<h3><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer">Vehicle Rental System</a></h3>
 							<p>Built a comprehensive vehicle rental system using Java Swing for the UI and MS Access database for local data storage. Features include vehicle management, rental tracking, and customer data handling.</p>
 							<ul class="stuff">
-								<li><a href="https://github.com/DevSharma324" target="_blank">View Project<i class="icon-arrow-right22"></i></a></li>
+								<li><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer">View Project<i class="icon-arrow-right22" aria-hidden="true"></i></a></li>
 							</ul>
 						</div> 
-					</div>
+					</article>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	
-	<div id="fh5co-resume" class="fh5co-bg-color">
+	<section id="fh5co-download-resume" class="fh5co-bg-color">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Download My Resume</h2>
-					<p>Interested in working together? Download my complete resume to learn more about my experience, skills, and accomplishments in backend development and technical support.</p>
-					<p><a href="Dev Resume Final.pdf" class="btn btn-default btn-lg" download>Download Resume</a></p>
+					<p>Interested in working together? Download my complete resume to learn more about my experience, skills, and accomplishments.</p>
+					<div class="download-button-wrapper">
+						<a href="Dev Resume Final.pdf" class="btn btn-primary btn-lg" download>Download Resume</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-
-			</form>	
-		</div>
-	</div> -->
-
-	<!-- <div id="map" class="fh5co-map"></div>
-	</div> -->
+	</section>
+	</main>
 	
-	<div id="fh5co-footer" class="fh5co-bg-dark">
+	<footer id="fh5co-footer" class="fh5co-bg-dark">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; 2025 All Rights Reserved.</p>
+			<!-- Footer Content -->
+			<div class="footer-content">
+				<div class="row">
+					<!-- Pages -->
+					<div class="col-md-3 col-sm-6 footer-column">
+						<h4 class="footer-heading">Pages</h4>
+						<ul class="footer-links">
+							<li><a href="#fh5co-about">About Me</a></li>
+							<li><a href="#fh5co-work">Projects</a></li>
+							<li><a href="#fh5co-footer">Contact</a></li>
+						</ul>
+					</div>
+					
+					<!-- Socials -->
+					<div class="col-md-3 col-sm-6 footer-column">
+						<h4 class="footer-heading">Socials</h4>
+						<ul class="footer-links">
+							<li><a href="https://github.com/DevSharma324" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+							<li><a href="https://www.linkedin.com/in/devsharma324/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+						</ul>
+					</div>
+					
+					<!-- Contact Info -->
+					<div class="col-md-3 col-sm-6 footer-column">
+						<h4 class="footer-heading">Address</h4>
+						<p class="footer-info">Nashik, India</p>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 footer-column">
+						<h4 class="footer-heading">Email</h4>
+						<p class="footer-info"><a href="mailto:sharma.dev.work@gmail.com">sharma.dev.work@gmail.com</a></p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-3 col-sm-6 footer-column">
+						<h4 class="footer-heading">Phone</h4>
+						<p class="footer-info"><a href="tel:+919552601550">+91 95526 01550</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Copyright -->
+			<div class="footer-copyright">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>&copy; 2025 Dev Sharma. All Rights Reserved.</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+		<a href="#page" class="js-gotop" aria-label="Go to top"><i class="icon-arrow-up22" aria-hidden="true"></i></a>
 	</div>
 	
 	<!-- jQuery -->
@@ -572,14 +454,8 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	
-	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 	</body>
 </html>

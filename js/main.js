@@ -36,12 +36,11 @@
 
 	// Parallax - only on desktop devices
 	var parallax = function() {
-		// Check if device is mobile/tablet
-		var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		// Check if device is touch-capable
 		var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 		
 		// Only initialize parallax on desktop devices for better performance
-		if (!isMobile && !isTouchDevice && $(window).width() > 768) {
+		if (!isTouchDevice && $(window).width() > 768) {
 			if (typeof $.fn.stellar !== 'undefined') {
 				$(window).stellar({
 					horizontalScrolling: false,
